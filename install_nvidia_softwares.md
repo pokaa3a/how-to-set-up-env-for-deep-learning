@@ -81,3 +81,10 @@ export CUDA_HOME=/usr/local/cuda
 Save and close it.
 
 ### References
+* [Installing CUDA 9.2 and cuDNN 7.1 on Ubuntu 16.04](https://medium.com/@abhiksingla10/installing-cuda-9-2-and-cudnn-7-1-on-ubuntu-16-04-d194cee27cba)
+* [Ubuntu18.04下安装深度学习框架Pytorch（GPU加速）](https://blog.csdn.net/wuzhiwuweisun/article/details/82753403)
+* [ubuntu安装显卡驱动的三种方法](https://blog.csdn.net/u014682691/article/details/80605201)
+* [01. Ubuntu下安装nvidia显卡驱动（安装方式简单）](https://blog.csdn.net/linhai1028/article/details/79445722)
+* [Ubuntu16.04使用apt get 命令安装 Nvidia 显卡驱动](https://blog.csdn.net/breeze5428/article/details/80013753)
+* [Linux安装NVIDIA显卡驱动的正确姿势](https://blog.csdn.net/wf19930209/article/details/81877822)
+
