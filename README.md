@@ -7,6 +7,6 @@ This repo documents the details and steps that how I set up an environment for r
 
 ## Steps
 
-1. Install Ubuntu 16.04 dual boot with Windows.
+1. Install Ubuntu 16.04 in dual boot with Windows 10.
 2. Install NVIDIA drivers, CUDA and cuDNN.
 3. Install Anaconda and Pytorch.
