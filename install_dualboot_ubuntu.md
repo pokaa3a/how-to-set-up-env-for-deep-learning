@@ -2,7 +2,7 @@
 Follow the instructions from [How to install Ubuntu from USB (Official Dell Tech Support)](https://youtu.be/RW9UWDOJjL4).
 
 ## Prepare Ubuntun iso
-Download ubuntu-16.04.6-desktop-amd64.iso from [Ubuntu](https://www.ubuntu.com/download/desktop).
+Download the latest Ubunti iso file from [Ubuntu](https://www.ubuntu.com/download/desktop), or download ***ubuntu-16.04.6-desktop-amd64.iso*** from [Ubuntu 16.04.6 LTS](http://releases.ubuntu.com/16.04/) (recommended).
 
 ## Create recovery drive by Dell OS Recovery Tool
 1. Download [Dell OS Recovery Tool](http://downloads.dell.com/MediaCreationUtility/DellOSRecoveryTool.msi)
