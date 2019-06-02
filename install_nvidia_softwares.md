@@ -86,7 +86,7 @@ $ sudo service lightdm restart
 
 ## Install NVIDIA cuDNN
 1. Go to [NVIDIA cudnn-download](https://developer.nvidia.com/rdp/cudnn-download)(registration required) and select the corresponding version of cuDNN according to your CUDA. Remember the cuDNN version **must** be suitable to CUDA version.  
-In my case, my CUDA is v9.0 and I choosed cuDNN v7.05.
+In my case, my CUDA is v9.0 and I choosed cuDNN v7.0.5.
 2. Download three `.deb` files (Runtime Library, Developer Library and Code Samples Library) for Ubuntu 16.04.
 3. Go to the directory where the three `.deb` files are and install them:
 ```
