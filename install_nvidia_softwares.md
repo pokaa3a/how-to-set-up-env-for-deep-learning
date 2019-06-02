@@ -98,12 +98,12 @@ $ sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
 ```
 $ gedit ~/.bashrc
 ```
->Add these lines at the bottom:
+   Add these lines at the bottom:
 ```
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
 export CUDA_HOME=/usr/local/cuda
 ```
->Save and close it.  
+   Save and close it.  
 5. Run CUDA Sample tests:
 ```
 #Test-0
