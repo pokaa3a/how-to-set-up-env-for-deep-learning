@@ -90,9 +90,9 @@ In my case, my CUDA is v9.0 and I choosed cuDNN v7.0.5.
 2. Download three `.deb` files (Runtime Library, Developer Library and Code Samples Library) for Ubuntu 16.04.
 3. Go to the directory where the three `.deb` files are and install them:
 ```
-$ sudo dpkg -i libcudnn7_7.1.4.18-1+cuda9.2_amd64.deb
-$ sudo dpkg -i libcudnn7-dev_7.1.4.18-1+cuda9.2_amd64.deb
-4 sudo dpkg -i libcudnn7-doc_7.1.4.18-1+cuda9.2_amd64.deb
+$ sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
+$ sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
+4 sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb
 ```
 4. Update your bash file:
 ```
@@ -104,6 +104,39 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/e
 export CUDA_HOME=/usr/local/cuda
 ```
 Save and close it.
+5. Run CUDA Sample tests:
+```
+#Test-0
+$ cd /usr/local/cuda-9.0/samples/0_Simple/vectorAdd
+$ sudo make
+$ ./vectorAdd
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+CUDA kernel launch with 196 blocks of 256 threads
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+```
+```
+#Test-1
+$ cd /usr/local/cuda-9.0/samples/1_Utilities/deviceQuery
+$ sudo make
+$ ./deviceQuery
+./deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: "GeForce GTX 1050 Ti"
+  CUDA Driver Version / Runtime Version          9.1 / 9.0
+  CUDA Capability Major/Minor version number:    6.1
+
+....
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 9.1, CUDA Runtime Version = 9.0, NumDevs = 1
+Result = PASS
+```
 
 ### References
 * [Installing CUDA 9.2 and cuDNN 7.1 on Ubuntu 16.04](https://medium.com/@abhiksingla10/installing-cuda-9-2-and-cudnn-7-1-on-ubuntu-16-04-d194cee27cba)
