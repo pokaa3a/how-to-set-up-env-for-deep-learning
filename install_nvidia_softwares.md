@@ -9,7 +9,7 @@ $ sudo apt-get remove --purge nvidia*
 ```
 2. Add driver into PPA:
 ```
-$ sudo add-apt-repository ppa:graphics-drivers
+$ sudo add-apt-repository ppa:graphics-drivers/ppa
 $ sudo apt-get update
 ```
 3. Check version of drivers recommended by Ubuntu:
@@ -87,4 +87,5 @@ Save and close it.
 * [01. Ubuntu下安装nvidia显卡驱动（安装方式简单）](https://blog.csdn.net/linhai1028/article/details/79445722)
 * [Ubuntu16.04使用apt get 命令安装 Nvidia 显卡驱动](https://blog.csdn.net/breeze5428/article/details/80013753)
 * [Linux安装NVIDIA显卡驱动的正确姿势](https://blog.csdn.net/wf19930209/article/details/81877822)
+* [Ubuntu 16.04安装NVIDIA驱动](https://blog.csdn.net/CosmosHua/article/details/76644029)
 
