@@ -52,4 +52,4 @@ $ conda activate py36
 >>> import torch
 >>> torch.cuda.is_available()
 ```
-If you see `True`, congratulations, Pytorch can apply with GPU.
+If you see `True`, congratulations, Pytorch now can use CUDA.
