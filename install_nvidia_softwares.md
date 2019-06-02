@@ -25,16 +25,40 @@ $ sudo apt-get install nvidia-390 nvidia-settings nvidia-prime
 ```
 $ reboot
 ```
+5. Test by entering:
+```
+$ nvidia-smi
+```
+If the driver is installed properly, the information below should show up:
+```
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 390.87                 Driver Version: 390.87                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 105...  Off  | 00000000:01:00.0 Off |                  N/A |
+| N/A   43C    P8    N/A /  N/A |    192MiB /  4040MiB |      6%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0      1000      G   /usr/lib/xorg/Xorg                           147MiB |
+|    0      1505      G   compiz                                        42MiB |
++-----------------------------------------------------------------------------+
+```
 
 ### Troubleshooting
-* **Boot to black screen or unabble to log in**  
+* **Boot to black screen or unabble to login:**  
 Probably the driver version doesn't match to your graphics card (It happens even you are using the version recommended by Ubuntu!).  
 First enter to console:  
 ```
 Ctrl + Alt + F1 (try F2~F6 if F1 doesn't work)
 ```  
 Login with user name and password.
-Repeat from step 1. to 4. and try with ***other version*** of drivers.
+Repeat from step 1. to 4. and try with ***other versions*** of drivers.
 
 ## Install NVIDIA CUDA Toolkit
 1. Here I install the CUDA Toolkit using `.run` file. Download the cuda run file from [NVIDIA cuda-downloads](https://developer.nvidia.com/cuda-downloads).   
@@ -61,7 +85,8 @@ $ sudo service lightdm restart
 ```
 
 ## Install NVIDIA cuDNN
-1. Go to [NVIDUA cudnn-download](https://developer.nvidia.com/rdp/cudnn-download)(registration required) and select the corresponding version of cuDNN according to your CUDA. Remember the cuDNN version **must** be suitable to CUDA version. In my case, my CUDA is v9.0 and I choosed cuDNN v7.05.
+1. Go to [NVIDIA cudnn-download](https://developer.nvidia.com/rdp/cudnn-download)(registration required) and select the corresponding version of cuDNN according to your CUDA. Remember the cuDNN version **must** be suitable to CUDA version.  
+In my case, my CUDA is v9.0 and I choosed cuDNN v7.05.
 2. Download three `.deb` files (Runtime Library, Developer Library and Code Samples Library) for Ubuntu 16.04.
 3. Go to the directory where the three `.deb` files are and install them:
 ```
