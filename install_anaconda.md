@@ -8,7 +8,7 @@ I used Anaconda to install Python3.6 and download Pytorch.
 $ bash ~/Downloads/Anaconda3-2019.03-Linux-x86_64.sh
 ```
 At the end of the installation, the installer will ask if you want to change environment variable in `~/.bashrc`. I suggest **NOT** to do that or it will contaminate the normal Python environment.  
-3. Create a virtual environment of Python 3.6:
+3. Create a virtual environment called `py36` of Python 3.6:
 ```
 $ ~/anaconda3/bin/conda create --name py36 python=3.6
 ```
@@ -25,6 +25,12 @@ alias deactivate="source ${HOME}/anaconda3/bin/deactivate"
 Run bash file:
 ```
 $ source ~/.bashrc
+```
+After adding these lines, you can activate / deactivate your venvs simplily by
+```
+$ py36
+$ activate py36
+$ deactivate
 ```
 
 ## Install Pytorch
