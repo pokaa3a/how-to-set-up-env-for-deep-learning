@@ -32,30 +32,3 @@ $ py36
 $ activate py36
 $ deactivate
 ```
-
-## Install Pytorch
-1. Activate the environment you just created:
-```
-$ conda activate py36
-```
-2. Install Pytorch according to your NVIDIA version. Here I used Pytorch-0.4.1 because of my driver-390 and cuda9.0:  
-(Using the latest Pytorch version might not be able to use CUDA if the versions mismatch.)
-```
-$ conda install pytorch=0.4.1 cuda90 torchvision -c pytorch
-```
-
-## Test if Pytorch can use GPU
-1. Activate the environment you just created:
-```
-$ conda activate py36
-```
-2. Open Python:
-```
-(py36)$ python
-```
-3. Test with following codes:
-```
->>> import torch
->>> torch.cuda.is_available()
-```
-If you see `True`, congratulations, Pytorch now can use CUDA.
