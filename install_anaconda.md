@@ -1,5 +1,5 @@
-# Install Anaconda and Pytorch
-I used Anaconda to install Python3.6 and download Pytorch.
+# Install Anaconda
+I used Anaconda to install Python3.6 and manage packages including deep learning frameworks.
 
 ## Install Anaconda
 1. Go to [Installing on Linux](http://docs.anaconda.com/anaconda/install/linux/) and download [Anaconda3](https://www.anaconda.com/distribution/#linux) for Python 3.
