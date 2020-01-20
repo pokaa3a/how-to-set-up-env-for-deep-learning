@@ -71,3 +71,6 @@ Solution: Change `Numpy` version to `1.16.4`:
 (cv_keras)$ conda install numpy=1.16.4
 ```
 
+## References
+* [How to install Keras with gpu support?](https://stackoverflow.com/questions/54689096/how-to-install-keras-with-gpu-support)
+* [FutureWarning: Deprecated numpy API calls in tf.python.framework.dtypes](https://github.com/tensorflow/tensorflow/issues/30427)
