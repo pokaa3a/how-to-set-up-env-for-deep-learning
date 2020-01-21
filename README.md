@@ -1,4 +1,4 @@
-# How to set up Pytorch on Ubuntu 16.04
+# How to set up an environment of deep learning on Ubuntu 16.04
 This repo documents the details and steps that how I set up an environment for running Pytorch with NVIDIA GPU on Ubuntu 16.04.
 
 ## Machine Spec
